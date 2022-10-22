@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>tetryds.Tools</name>
+    </assembly>
+    <members>
+        <member name="M:tetryds.Tools.ExtraGizmos.DrawCone(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single,System.Int32)">
+            <summary>
+            Draws an ugly but useful cone as Unity gizmos.
+            </summary>
+            <param name="tipPos">The position of the tip of the cone.</param>
+            <param name="downDir">The downwards direction from the tip.</param>
+            <param name="angle">The opening width angle of the cone.</param>
+            <param name="height">The height of the cone.</param>
+            <param name="pointCount">The resolution of the cone drawing.</param>
+        </member>
+        <member name="M:tetryds.Tools.SpecialCasts.RaycastConeNonAlloc(UnityEngine.Vector3,System.Single,UnityEngine.Vector3,UnityEngine.RaycastHit[],System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)">
+            <summary>
+            Cast a ray through the Scene and store the hits into the buffer.
+            </summary>
+            <param name="origin">The starting point and direction of the ray.</param>
+            <param name="angle">The cone opening angle, in degrees.</param>
+            <param name="direction">The direction of the ray.</param>
+            <param name="results">The buffer to store the hits into. Use a larger array than the minimum collisions you want for the cast to ignore false posisives.</param>
+            <param name="maxDistance">The max distance the rayhit is allowed to be from the start of the ray. Big vaules can cause performance issues!</param>
+            <param name="layerMask">A that is used to selectively ignore colliders when casting a ray.</param>
+            <param name="queryTriggerInteraction">Specifies whether this query should hit Triggers.</param>
+            <returns>The amount of hits stored into the results buffer.</returns>
+        </member>
+        <member name="T:tetryds.Tools.SyncTimer">
+            <summary>
+            Sync timer that accumulates tick time and invokes callback synchronously when a given period is elapsed.
+            </summary>
+        </member>
+        <member name="M:tetryds.Tools.SyncTimer.#ctor(System.Single,System.Single)">
+            <summary>
+            Creates a SyncTimer instance.
+            </summary>
+            <param name="period">Period of time between timeouts. If this period is 0 or lower, expires every tick.</param>
+            <param name="initialElapsed">Sets initial elapsed time for the timer.</param>
+        </member>
+        <member name="M:tetryds.Tools.SyncTimer.Tick(System.Single)">
+            <summary>
+            Advances timer by deltaTime. If the internal timer has expired, invokes Timeout callback.
+            If the deltaTime is larger than the period, Timeout can be invoked more than once per Tick.
+            </summary>
+            <param name="deltaTime">Elapsed time in seconds. Has no effect if zero or lower</param>
+        </member>
+    </members>
+</doc>
