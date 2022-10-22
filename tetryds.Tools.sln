@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.2017
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tetryds.Tools", "tetryds.Tools\tetryds.Tools.csproj", "{66193D31-1905-4094-9470-6B75D8A26CD9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tetryds.Tools.Tests", "tetryds.Tools.Tests\tetryds.Tools.Tests.csproj", "{6DEC8DA0-DCF0-4BC1-9B6A-5E4728546F5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{66193D31-1905-4094-9470-6B75D8A26CD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66193D31-1905-4094-9470-6B75D8A26CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66193D31-1905-4094-9470-6B75D8A26CD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DEC8DA0-DCF0-4BC1-9B6A-5E4728546F5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DEC8DA0-DCF0-4BC1-9B6A-5E4728546F5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DEC8DA0-DCF0-4BC1-9B6A-5E4728546F5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DEC8DA0-DCF0-4BC1-9B6A-5E4728546F5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
